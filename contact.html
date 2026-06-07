@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact page for the futuristic portfolio." />
+    <title>Contact | SRIVARSHAN S</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="contact">
+    <div class="scroll-progress"><span class="scroll-progress__bar"></span></div>
+    <div class="preloader" aria-hidden="true"><div class="preloader__core"></div><p>Booting digital universe</p></div>
+    <div class="page-transition"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="site-header glass-shell">
+      <a class="brand" href="index.html" data-page-link data-logo-mark><span class="brand__mark">SR</span><span><strong>SRIVARSHAN S</strong><small>Full Stack Developer</small></span></a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links" data-nav-menu>
+        <a href="index.html" data-page-link data-transition>Home</a>
+        <a href="about.html" data-page-link data-transition>About</a>
+        <a href="skills.html" data-page-link data-transition>Skills</a>
+        <a href="projects.html" data-page-link data-transition>Projects</a>
+        <a href="contact.html" data-page-link data-transition>Contact</a>
+        <button class="nav-ghost" data-theme-toggle>Theme</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--page">
+        <div class="hero__aurora hero__aurora--one"></div>
+        <div class="hero__aurora hero__aurora--two"></div>
+        <div class="hero__inner container">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Contact / Let's Connect</p>
+            <h1>Get in touch for collaborations and opportunities.</h1>
+            <p class="hero__lede">I'm always open to discussing new projects, creative ideas, and opportunities to contribute my skills in full-stack development and AI & ML solutions.</p>
+          </div>
+          <div class="hero__visual reveal" data-tilt>
+            <div class="glass-card section-card">
+              <p class="section-card__label">Direct Contact</p>
+              <div class="link-row">
+                <a href="mailto:srivarshan668@gmail.com">srivarshan668@gmail.com</a>
+                <a href="tel:+918189842591">+91 8189842591</a>
+                <span>Trichy, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal" data-spy-section>
+        <div class="grid grid--two">
+          <form class="glass-card form" data-contact-form>
+            <div class="input-group"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Your name" required /></div>
+            <div class="input-group"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@example.com" required /></div>
+            <div class="input-group" style="grid-column: 1 / -1;"><label for="message">Message</label><textarea id="message" name="message" placeholder="Tell me about your product, timeline, and goals." required></textarea></div>
+            <p class="form-status" data-form-status></p>
+            <button class="btn btn--primary" type="submit">Send Message</button>
+          </form>
+          <div class="grid" style="align-content: start;">
+            <article class="glass-card profile-card" data-tilt><strong>LinkedIn</strong><span>Connect with me professionally on LinkedIn</span><a href="https://www.linkedin.com/in/srivarshan-s-0613352a6" target="_blank" rel="noreferrer" class="profile-card__badge">Visit Profile</a></article>
+            <article class="glass-card profile-card" data-tilt><strong>GitHub</strong><span>Code samples, experiments, and implementation details.</span></article>
+            <article class="glass-card profile-card" data-tilt><strong>Resume</strong><span>Preview and download are available from the home page.</span></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>Designed to feel like an interactive digital universe.</p><div><a href="projects.html" data-transition>Projects</a><a href="index.html" data-transition>Home</a></div></footer>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Projects page for the futuristic portfolio." />
+    <title>Projects | SRIVARSHAN S</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body data-page="projects">
+    <div class="scroll-progress"><span class="scroll-progress__bar"></span></div>
+    <div class="preloader" aria-hidden="true"><div class="preloader__core"></div><p>Booting digital universe</p></div>
+    <div class="page-transition"></div>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header class="site-header glass-shell">
+      <a class="brand" href="index.html" data-page-link data-logo-mark><span class="brand__mark">SR</span><span><strong>SRIVARSHAN S</strong><small>Full Stack Developer</small></span></a>
+      <button class="nav-toggle" data-nav-toggle aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="nav-links" data-nav-menu>
+        <a href="index.html" data-page-link data-transition>Home</a>
+        <a href="about.html" data-page-link data-transition>About</a>
+        <a href="skills.html" data-page-link data-transition>Skills</a>
+        <a href="projects.html" data-page-link data-transition>Projects</a>
+        <a href="contact.html" data-page-link data-transition>Contact</a>
+        <button class="nav-ghost" data-theme-toggle>Theme</button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero hero--page">
+        <div class="hero__aurora hero__aurora--one"></div>
+        <div class="hero__aurora hero__aurora--two"></div>
+        <div class="hero__inner container">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Projects / Portfolio</p>
+            <h1>AI-powered and full-stack projects solving real-world problems.</h1>
+            <p class="hero__lede">These projects showcase my expertise in full-stack development, AI & ML integration, and embedded systems. Each project represents a complete solution from conception to implementation.</p>
+            <div class="hero__actions">
+              <button class="btn btn--secondary is-active" data-filter="all">All Projects</button>
+              <button class="btn btn--secondary" data-filter="ai">AI/ML</button>
+              <button class="btn btn--secondary" data-filter="embedded">Embedded</button>
+            </div>
+          </div>
+          <div class="hero__visual reveal" data-tilt>
+            <div class="glass-card section-card">
+              <p class="section-card__label">Interaction Note</p>
+              <p>Hover cards to tilt, tap for modal details, and use the filter chips to reshape the gallery instantly.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal" data-spy-section>
+        <div class="grid grid--two">
+          <article class="project-card glass-card" data-project-card data-category="ai" data-tilt>
+            <div class="project-card__media project-card__media--one"></div>
+            <h3>Mindease: AI Powered Mental Health Chatbot</h3>
+            <p>Developed an AI-powered mental health chatbot providing accessible real-time emotional support and early mental health issue detection.</p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+            <button class="text-link" data-open-project data-title="Mindease: AI Powered Mental Health Chatbot" data-tech="HTML / CSS / JavaScript / PHP / MySQL / Python / AI & ML" data-description="An AI-powered chatbot providing accessible real-time emotional support and early mental health issue detection. Built to help users receive immediate assistance for mental health concerns.">View details</button>
+          </article>
+          <article class="project-card glass-card" data-project-card data-category="embedded" data-tilt>
+            <div class="project-card__media project-card__media--two"></div>
+            <h3>Touch & Tell: Voice Assistance For Immobile Patients</h3>
+            <p>Developed an AI-based voice assistance system helping immobile patients communicate and control functions using touch and voice commands.</p>
+            <div class="project-card__links">
+              <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+            <button class="text-link" data-open-project data-title="Touch & Tell: Voice Assistance" data-tech="Embedded C / Voice Processing / IoT" data-description="An AI-based voice assistance system that enables immobile patients to communicate and control functions through touch and voice commands, improving accessibility and independence.">View details</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><p>Designed to feel like an interactive digital universe.</p><div><a href="contact.html" data-transition>Contact</a><a href="index.html" data-transition>Home</a></div></footer>
+
+    <div class="modal" data-project-modal data-modal aria-hidden="true">
+      <div class="modal__backdrop" data-close-modal></div>
+      <div class="modal__panel glass-card">
+        <button class="modal__close" data-close-modal aria-label="Close project details">×</button>
+        <h3 data-modal-title></h3>
+        <p data-modal-meta></p>
+        <div class="modal__body" data-modal-body></div>
+      </div>
+    </div>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
