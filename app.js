@@ -45,11 +45,7 @@ function initMobileNav() {
       const samePageAnchor = href.startsWith('#') || href.includes('#');
       if (samePageAnchor) return;
 
-      event.preventDefault();
-      document.body.classList.add('is-navigating');
-      window.setTimeout(() => {
-        window.location.href = href;
-      }, 360);
+      window.location.href = href;
     });
   });
 
